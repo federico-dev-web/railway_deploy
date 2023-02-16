@@ -92,7 +92,7 @@ passport.deserializeUser( async (username, done) => {
 
 app.use(session(sessionMongo))
 
-//const PORT = 8080
+const PORT = process.env.PORT || 8080
 
 app.set('views', './views')
 app.set('view engine', 'pug')
