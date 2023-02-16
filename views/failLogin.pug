@@ -1,0 +1,11 @@
+extends layout
+
+block content
+    div(class="container mt-3 mx-auto")
+        div(id="usuario")
+        div(id="contenidoDeLogeo")
+        
+        div(class="alert alert-danger min-vw-50 al")
+            p(class='display-4 font-weight-normal') No se ha podido iniciar sesión, verifique su usuario y contraseña
+            br
+            button(class="btn btn-warning" onclick ="location.href='/login'") VOLVER
